@@ -35,7 +35,8 @@ miBoton.addEventListener("click", event=>{
             colorHex.push(numero); 
         }
       }
-    console.log("#" + colorHex.join(""));
+      // document.querySelector(".hex-value").textContent = "Hex Color: #" + colorHex.join("");
+     document.querySelector("#hex-value").textContent = "#" + colorHex.join("");
     document.querySelector("body").style.backgroundColor = "#" + colorHex.join("");
 
 })
